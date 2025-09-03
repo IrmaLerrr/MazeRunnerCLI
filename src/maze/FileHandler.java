@@ -24,6 +24,7 @@ public class FileHandler {
         try {
             Maze maze =  (Maze) SerializationUtils.deserialize(fileName);
             System.out.println("Maze is successfully loaded.");
+            maze.printMaze();
             return maze;
         } catch (FileNotFoundException e) {
             System.out.println("The file " + fileName + " does not exist");

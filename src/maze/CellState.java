@@ -2,7 +2,8 @@ package maze;
 
 public enum CellState {
     EMPTY("  "),
-    BLOCKED("██");
+    BLOCKED("██"),
+    PATH("//");
 
     private final String value;
 
